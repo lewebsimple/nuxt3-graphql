@@ -6,6 +6,11 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
+    "@lewebsimple/eslint-config": "^0.2.4",
+    "eslint": "^7",
     "nuxt3": "latest"
+  },
+  "eslintConfig": {
+    "extends": "@lewebsimple/eslint-config/vue3"
   }
 }
