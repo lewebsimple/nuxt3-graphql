@@ -7,4 +7,5 @@ export const schema = makeSchema({
   outputs: {
     schema: resolve(process.cwd(), "server/generated/schema.graphql"),
   },
+  shouldGenerateArtifacts: process.env.NODE_ENV === "development",
 });
