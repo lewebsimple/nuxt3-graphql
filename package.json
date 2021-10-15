@@ -7,11 +7,15 @@
   },
   "devDependencies": {
     "@benzene/http": "^0.4.0",
-    "@lewebsimple/eslint-config": "^0.2.5",
+    "@lewebsimple/eslint-config": "^0.2.7",
     "eslint": "^7",
+    "fibers": "^5.0.0",
     "graphql": "^15.6.1",
     "nexus": "^1.1.0",
-    "nuxt3": "latest"
+    "nuxt-windicss": "^2.0.0",
+    "nuxt3": "latest",
+    "sass": "^1.43.2",
+    "sass-loader": "10"
   },
   "eslintConfig": {
     "extends": "@lewebsimple/eslint-config/vue3"
