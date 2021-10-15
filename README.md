@@ -1,4 +1,4 @@
-# Nuxt 3 / Graphql fullstact starter
+# Nuxt 3 / GraphQL fullstack starter
 
 * [Benzene](https://benzene.vercel.app/) - Fast and minimal GraphQL server
 * [Nexus](https://nexusjs.org/) - Declarative, Code-First GraphQL Schemas
