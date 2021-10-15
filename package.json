@@ -6,8 +6,11 @@
     "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
+    "@benzene/http": "^0.4.0",
     "@lewebsimple/eslint-config": "^0.2.4",
     "eslint": "^7",
+    "graphql": "^15.6.1",
+    "nexus": "^1.1.0",
     "nuxt3": "latest"
   },
   "eslintConfig": {
