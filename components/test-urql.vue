@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div v-if="data">
     {{ data.hello }}
   </div>
 </template>
