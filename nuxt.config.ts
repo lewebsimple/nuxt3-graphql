@@ -1,8 +1,10 @@
 import { defineNuxtConfig } from "nuxt3";
-import nuxtCodegen from "./modules/codegen";
 
 export default defineNuxtConfig({
-  buildModules: ["nuxt-windicss", nuxtCodegen],
+  buildModules: ["nuxt-windicss", "./modules/codegen", "./modules/urql"],
+  urql: {
+    url: "http://localhost:3000/api/graphql",
+  },
   windicss: {
     analyze: false,
   },
