@@ -16,6 +16,7 @@ export default defineNuxtModule((nuxt) => ({
   configKey: "codegen",
   defaults: {},
   async setup(_options, nuxt) {
+    nuxt.hook("build:before", codegenGenerateTypings); // @see https://github.com/nuxt/framework/pull/1139
     nuxt.hook("builder:watch", codegenGenerateTypings);
   },
 }));
