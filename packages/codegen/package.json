@@ -22,5 +22,8 @@
   },
   "peerDependencies": {
     "graphql": "^15 || ^16"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
