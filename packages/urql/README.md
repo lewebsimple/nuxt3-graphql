@@ -1,4 +1,4 @@
-# nuxt3-graphql/urql
+# @nuxt3-graphql/urql
 
 <a href="https://formidable.com/open-source/urql/docs/basics/vue/">@urql/vue</a> for Nuxt.js! ⚡️
 
