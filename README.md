@@ -1,30 +1,13 @@
-# Nuxt 3 / GraphQL fullstack starter
+# nuxt3-graphql
 
-* [Benzene](https://benzene.vercel.app/) - Fast and minimal GraphQL server
-* [Nexus](https://nexusjs.org/) - Declarative, Code-First GraphQL Schemas
+This package provides some useful modules for building fullstack GraphQL applications with Nuxt3.
 
-## Setup
+## Modules
 
-Make sure to install the dependencies
+- @nuxt3-graphql/codegen : [GraphQL Code Generator](https://www.graphql-code-generator.com/)
+- @nuxt3-graphql/urql : GraphQL client based on [@urql/vue](https://formidable.com/open-source/urql/docs/basics/vue/)
 
-```bash
-yarn install
-```
+## Credits
 
-## Development
-
-Start the development server on http://localhost:3000
-
-```bash
-yarn dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-yarn build
-```
-
-Checkout the [deployment documentation](https://v3.nuxtjs.org/docs/deployment).
+- Based on a project by [@bicouy0](https://github.com/bicouy0/nuxt3-urql)
+- Nuxt module structure [nuxt3-supabase](https://github.com/wobsoriano/nuxt3-supabase)

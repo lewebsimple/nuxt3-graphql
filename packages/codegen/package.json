@@ -1,0 +1,26 @@
+{
+  "name": "@nuxt3-graphql/codegen",
+  "version": "0.1.0",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "unbuild"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^2.2.2",
+    "@nuxt/kit": "npm:@nuxt/kit-edge@latest",
+    "graphql": "^15",
+    "unbuild": "^0.5.11"
+  },
+  "peerDependencies": {
+    "graphql": "^15 || ^16"
+  }
+}

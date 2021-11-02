@@ -1,0 +1,34 @@
+{
+  "name": "@nuxt3-graphql/urql",
+  "version": "0.2.0",
+  "license": "MIT",
+  "exports": {
+    ".": {
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    },
+    "./plugin": {
+      "require": "./dist/plugin.cjs",
+      "import": "./dist/plugin.mjs"
+    }
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "unbuild"
+  },
+  "devDependencies": {
+    "@nuxt/kit": "npm:@nuxt/kit-edge@latest",
+    "@nuxt/types": "^2.15.8",
+    "@urql/vue": "^0.6.0",
+    "graphql": "^15",
+    "pathe": "^0.2.0",
+    "unbuild": "^0.5.11",
+    "vue": "^3"
+  },
+  "peerDependencies": {
+    "@urql/vue": "^0.6.0",
+    "graphql": "^15.0.0 || ^16.0.0"
+  }
+}
