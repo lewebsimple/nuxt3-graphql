@@ -5,7 +5,9 @@ generates:
     plugins:
       - typescript
   generated/operations.ts:
+    config:
+      documentMode: documentNode
     plugins:
       - typescript
       - typescript-operations
-      - typed-document-node
+      - typescript-vue-urql
