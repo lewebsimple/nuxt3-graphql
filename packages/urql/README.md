@@ -4,7 +4,7 @@
 
 ## Features
 
-- Basic Nuxt3 module for providing urql client
+- Provide urql client to your application
 - Configurable URL in `nuxt.config.ts`
 - SSR support with [ssrExchange](https://formidable.com/open-source/urql/docs/advanced/server-side-rendering/#the-ssr-exchange)
 

@@ -2,6 +2,13 @@
   "name": "@nuxt3-graphql/codegen",
   "version": "0.2.1",
   "description": "GraphQL Code Generator for Nuxt.js! ⚡️",
+  "keywords": [
+    "nuxt",
+    "vue",
+    "graphql",
+    "codegen"
+  ],
+  "license": "MIT",
   "author": "Pascal Martineau <pascal@lewebsimple.ca>",
   "bugs": {
     "url": "https://github.com/lewebsimple/nuxt3-graphql/issues"
@@ -11,7 +18,6 @@
     "type": "git",
     "url": "git+https://github.com/lewebsimple/nuxt3-graphql.git"
   },
-  "license": "MIT",
   "exports": {
     ".": {
       "require": "./dist/index.cjs",
@@ -21,9 +27,18 @@
   "main": "./dist/index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "files": [
+    "dist/*"
+  ],
   "scripts": {
     "build": "unbuild",
-    "dev": "unbuild --stub"
+    "dev": "unbuild --stub",
+    "lint": "eslint --ext .js,.ts,.vue --fix .",
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn lint",
+    "preversion": "yarn lint",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "devDependencies": {
     "@graphql-codegen/cli": "^2.2.2",
@@ -32,6 +47,7 @@
     "unbuild": "^0.5.11"
   },
   "peerDependencies": {
+    "@graphql-codegen/cli": "^2",
     "graphql": "^15 || ^16"
   },
   "publishConfig": {

@@ -1,6 +1,7 @@
 {
   "name": "nuxt3-graphql-monorepo",
   "license": "MIT",
+  "author": "Pascal Martineau <pascal@lewebsimple.ca>",
   "private": true,
   "workspaces": [
     "packages/*",
