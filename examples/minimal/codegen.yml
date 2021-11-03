@@ -1,5 +1,11 @@
-schema: graphql/schema.graphql
+schema: generated/schema.graphql
+documents: graphql/**/*.graphql
 generates:
   generated/schema.d.ts:
     plugins:
       - typescript
+  generated/operations.ts:
+    plugins:
+      - typescript
+      - typescript-operations
+      - typed-document-node

@@ -12,11 +12,16 @@
     "postversion": "git push && git push --tags"
   },
   "devDependencies": {
+    "@envelop/core": "^1.6.0",
+    "@graphql-codegen/typed-document-node": "^2.2.0",
     "@graphql-codegen/typescript": "^2.3.0",
+    "@graphql-codegen/typescript-operations": "^2.2.0",
+    "@graphql-codegen/typescript-vue-urql": "^2.2.0",
     "@nuxt3-graphql/codegen": "^0",
     "@nuxt3-graphql/urql": "^0",
     "@urql/vue": "^0.6.0",
     "graphql": "^15",
+    "nexus": "^1.1.0",
     "nuxt3": "latest"
   }
 }
