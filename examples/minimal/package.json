@@ -9,8 +9,8 @@
   },
   "devDependencies": {
     "@graphql-codegen/typescript": "^2.3.0",
-    "@nuxt3-graphql/codegen": "^0.2.1",
-    "@nuxt3-graphql/urql": "^0.2.1",
+    "@nuxt3-graphql/codegen": "^0",
+    "@nuxt3-graphql/urql": "^0",
     "@urql/vue": "^0.6.0",
     "graphql": "^15",
     "nuxt3": "latest"
