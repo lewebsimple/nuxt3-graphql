@@ -9,7 +9,6 @@
 </template>
 
 <script setup lang="ts">
-import { HelloDocument } from "~/generated/operations";
-import { useQuery } from "@urql/vue";
-const { fetching, error, data } = await useQuery({ query: HelloDocument });
+import { useHelloQuery } from "~/generated/operations";
+const { fetching, error, data } = await useHelloQuery();
 </script>

@@ -13,7 +13,6 @@
   },
   "devDependencies": {
     "@envelop/core": "^1.6.0",
-    "@graphql-codegen/typed-document-node": "^2.2.0",
     "@graphql-codegen/typescript": "^2.3.0",
     "@graphql-codegen/typescript-operations": "^2.2.0",
     "@graphql-codegen/typescript-vue-urql": "^2.2.0",
