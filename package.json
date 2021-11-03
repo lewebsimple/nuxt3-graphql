@@ -8,7 +8,7 @@
   ],
   "scripts": {
     "build": "yarn workspaces run build",
-    "clean": "rm -rf node_modules */*/node_modules"
+    "clean": "rm -rf ./node_modules ./*/*/node_modules ./*/*/dist ./examples/*/.nuxt ./examples/*/.output"
   },
   "devDependencies": {
     "@lewebsimple/eslint-config": "^0.2.7",
