@@ -16,16 +16,16 @@ yarn add -D @nuxt3-graphql/codegen @graphql-codegen/cli graphql
 
 ## Usage
 
-Within your `nuxt.config.js` add the following.
+Within your `nuxt.config.js` add the following:
 
 ```js
-import { defineNuxtConfig } from 'nuxt3'
+import { defineNuxtConfig } from "nuxt3";
 
 export default defineNuxtConfig({
   buildModules: [
-    '@nuxt3-graphql/codegen',
+    "@nuxt3-graphql/codegen",
   ],
-})
+});
 ```
 
 Refer to the GraphQL Code Generator [documentation](https://www.graphql-code-generator.com/docs/getting-started/index/) for more information.

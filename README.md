@@ -4,8 +4,12 @@ This package provides some useful modules for building fullstack GraphQL applica
 
 ## Modules
 
-- @nuxt3-graphql/codegen : [GraphQL Code Generator](https://www.graphql-code-generator.com/)
-- @nuxt3-graphql/urql : GraphQL client based on [@urql/vue](https://formidable.com/open-source/urql/docs/basics/vue/)
+- [@nuxt3-graphql/codegen](packages/codegen) : GraphQL code generation based on [@graphql-codegen/cli](https://www.graphql-code-generator.com/)
+- [@nuxt3-graphql/urql](packages/urql) : GraphQL client based on [@urql/vue](https://formidable.com/open-source/urql/docs/basics/vue/)
+
+## Examples
+
+- [examples/minimal](examples/minimal) : Minimal showcase of the various nuxt3-graphql modules
 
 ## Credits
 

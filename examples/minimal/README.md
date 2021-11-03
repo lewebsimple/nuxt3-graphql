@@ -1,4 +1,4 @@
-# Nuxt 3 GraphQL minimal starter
+# Nuxt3 GraphQL minimal starter
 
 We recommend to look at the [documentation](https://v3.nuxtjs.org).
 

@@ -1,6 +1,6 @@
 # @nuxt3-graphql/urql
 
-<a href="https://formidable.com/open-source/urql/docs/basics/vue/">@urql/vue</a> for Nuxt.js! ⚡️
+[@urql/vue](https://formidable.com/open-source/urql/docs/basics/vue/) for Nuxt.js! ⚡️
 
 ## Features
 
@@ -17,19 +17,19 @@ yarn add -D @nuxt3-graphql/urql @urql/vue graphql
 
 ## Usage
 
-Within your `nuxt.config.js` add the following.
+Within your `nuxt.config.js` add the following:
 
 ```js
-import { defineNuxtConfig } from 'nuxt3'
+import { defineNuxtConfig } from "nuxt3";
 
 export default defineNuxtConfig({
   buildModules: [
-    '@nuxt3-graphql/urql',
+    "@nuxt3-graphql/urql",
   ],
   urql: {
-    url: 'https://rickandmortyapi.com/graphql/'
-  }
-})
+    url: "https://rickandmortyapi.com/graphql/"
+  },
+});
 ```
 
 Refer to the `@urql/vue` [documentation](https://formidable.com/open-source/urql/docs/basics/vue/) for more information.
@@ -38,9 +38,3 @@ Refer to the `@urql/vue` [documentation](https://formidable.com/open-source/urql
 
 - [ ] Integration with [GraphQL Code Generator](https://www.graphql-code-generator.com/)
 - [ ] Normalized caching with [Graphcache](https://formidable.com/open-source/urql/docs/graphcache/normalized-caching/)
-- [ ] Better documentation and examples
-
-## Credits
-
-- Based on a project by [@bicouy0](https://github.com/bicouy0/nuxt3-urql)
-- Nuxt module structure [nuxt3-supabase](https://github.com/wobsoriano/nuxt3-supabase)
