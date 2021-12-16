@@ -13,7 +13,6 @@
   },
   "devDependencies": {
     "@lewebsimple/eslint-config": "^0.3.0",
-    "@nuxt/kit": "latest",
     "@nuxt/types": "^2.15.8",
     "esbuild": "^0.14.5",
     "eslint": "^8.4.1",

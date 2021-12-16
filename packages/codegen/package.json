@@ -45,8 +45,9 @@
     "version": "git add -A src",
     "postversion": "git push && git push --tags"
   },
-  "dependencies": {
+  "devDependencies": {
     "@graphql-codegen/cli": "^2.3.0",
-    "graphql": "^16.1.0"
+    "@nuxt/kit": "latest",
+    "graphql": "^15"
   }
 }

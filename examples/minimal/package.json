@@ -17,10 +17,10 @@
     "@graphql-codegen/typescript-operations": "^2.2.1",
     "@graphql-codegen/typescript-vue-urql": "^2.2.1",
     "@graphql-codegen/urql-introspection": "^2.1.0",
-    "@nuxt3-graphql/codegen": "^0",
-    "@nuxt3-graphql/urql": "^0",
+    "@nuxt3-graphql/codegen": "link:../../packages/codegen",
+    "@nuxt3-graphql/urql": "link:../../packages/urql",
     "@urql/vue": "^0.6.1",
-    "graphql": "^16",
+    "graphql": "^15",
     "nexus": "^1.1.0",
     "nuxt3": "latest"
   }
