@@ -1,8 +1,9 @@
-import { BuildConfig } from "unbuild";
+import { defineBuildConfig } from "unbuild";
 
-export default {
+export default defineBuildConfig({
   declaration: true,
-  entries: ["./src/index"],
+  emitCJS: false,
+  entries: [{ input: "./src/index" }],
   externals: [
     "@graphql-codegen/cli",
     "@graphql-codegen/plugin-helpers",
@@ -11,4 +12,4 @@ export default {
     "consola",
     "graphql",
   ],
-} as BuildConfig;
+});

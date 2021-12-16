@@ -1,7 +1,8 @@
-import { BuildConfig } from "unbuild";
+import { defineBuildConfig } from "unbuild";
 
-export default {
+export default defineBuildConfig({
   declaration: true,
-  entries: ["./src/index", "./src/plugin"],
+  emitCJS: false,
+  entries: [{ input: "./src/index" }, { input: "./src/plugin", declaration: false }],
   externals: ["@nuxt/kit", "@nuxt/schema", "@urql/vue", "pathe", "vue", "#app", "#build", "#build/urql.options.mjs"],
-} as BuildConfig;
+});

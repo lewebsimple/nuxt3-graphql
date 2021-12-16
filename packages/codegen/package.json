@@ -20,16 +20,17 @@
   },
   "exports": {
     ".": {
-      "require": "./dist/index.cjs",
+      "require": "./index.cjs",
       "import": "./dist/index.mjs",
       "types": "./dist/index.d.ts"
     }
   },
-  "main": "./dist/index.cjs",
+  "main": "./index.cjs",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "files": [
-    "dist/*"
+    "dist",
+    "index.cjs"
   ],
   "publishConfig": {
     "access": "public"
