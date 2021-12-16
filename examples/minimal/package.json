@@ -1,6 +1,6 @@
 {
   "name": "@nuxt3-graphql/minimal",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "private": true,
   "scripts": {
     "dev": "nuxi dev",
@@ -8,7 +8,7 @@
     "start": "node .output/server/index.mjs",
     "lint": "eslint --ext .js,.ts,.vue --fix .",
     "preversion": "yarn lint",
-    "version": "git add -A src",
+    "version": "git add -A .",
     "postversion": "git push && git push --tags"
   },
   "devDependencies": {
