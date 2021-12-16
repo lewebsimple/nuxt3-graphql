@@ -1,6 +1,6 @@
 {
   "name": "@nuxt3-graphql/urql",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "@urql/vue for Nuxt.js! ⚡️",
   "keywords": [
     "nuxt",
