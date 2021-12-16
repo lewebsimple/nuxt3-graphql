@@ -31,9 +31,27 @@ export default defineNuxtConfig({
   buildModules: [
     "@nuxt3-graphql/codegen",
   ],
+  codegen: {
+    // Specify and/or override graphql-codegen configuration if needed
+  },
 });
 ```
 
 This will automativally generate the GraphQL code based on your codegen config file each time Nuxt builds your project (this also works in dev mode).
 
 Refer to the GraphQL Code Generator [documentation](https://www.graphql-code-generator.com/docs/getting-started/index/) for more information.
+
+## Typescript
+
+For Nuxt config typescript support, add the following to `tsconfig.json`:
+
+```json
+
+{
+  "compilerOptions": {
+    "types": [
+      "@nuxt3-graphql/codegen"
+    ]
+  }
+}
+```

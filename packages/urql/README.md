@@ -34,6 +34,21 @@ export default defineNuxtConfig({
 
 Refer to the `@urql/vue` [documentation](https://formidable.com/open-source/urql/docs/basics/vue/) for more information.
 
+## Typescript
+
+For Nuxt config typescript support, add the following to `tsconfig.json`:
+
+```json
+
+{
+  "compilerOptions": {
+    "types": [
+      "@nuxt3-graphql/urql"
+    ]
+  }
+}
+```
+
 ## Roadmap
 
 - [ ] Integration with [GraphQL Code Generator](https://www.graphql-code-generator.com/)
