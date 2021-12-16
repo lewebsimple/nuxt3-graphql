@@ -12,9 +12,12 @@
     "clean": "rm -rf ./node_modules ./*/*/node_modules ./*/*/dist ./examples/*/.nuxt ./examples/*/.output"
   },
   "devDependencies": {
-    "@lewebsimple/eslint-config": "^0.2.7",
+    "@lewebsimple/eslint-config": "^0.3.0",
+    "@nuxt/kit": "latest",
     "@nuxt/types": "^2.15.8",
-    "eslint": "^7"
+    "esbuild": "^0.14.5",
+    "eslint": "^8.4.1",
+    "unbuild": "^0.5.11"
   },
   "eslintConfig": {
     "extends": "@lewebsimple/eslint-config/vue3"

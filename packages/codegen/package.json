@@ -30,6 +30,9 @@
   "files": [
     "dist/*"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "unbuild",
     "dev": "unbuild --stub",
@@ -40,17 +43,8 @@
     "version": "git add -A src",
     "postversion": "git push && git push --tags"
   },
-  "devDependencies": {
-    "@graphql-codegen/cli": "^2.2.2",
-    "@nuxt/kit": "npm:@nuxt/kit-edge@latest",
-    "graphql": "^15",
-    "unbuild": "^0.5.11"
-  },
-  "peerDependencies": {
-    "@graphql-codegen/cli": "^2",
-    "graphql": "^15 || ^16"
-  },
-  "publishConfig": {
-    "access": "public"
+  "dependencies": {
+    "@graphql-codegen/cli": "^2.3.0",
+    "graphql": "^16.1.0"
   }
 }

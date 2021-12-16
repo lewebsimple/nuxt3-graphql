@@ -34,6 +34,9 @@
   "files": [
     "./dist/*"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "unbuild",
     "dev": "unbuild --stub",
@@ -45,19 +48,9 @@
     "postversion": "git push && git push --tags"
   },
   "devDependencies": {
-    "@nuxt/kit": "npm:@nuxt/kit-edge@latest",
-    "@nuxt/types": "^2.15.8",
-    "@urql/vue": "^0.6.0",
-    "graphql": "^15",
+    "@urql/vue": "^0.6.1",
+    "graphql": "^16",
     "pathe": "^0.2.0",
-    "unbuild": "^0.5.11",
     "vue": "^3"
-  },
-  "peerDependencies": {
-    "@urql/vue": "^0.6.0",
-    "graphql": "^15.0.0 || ^16.0.0"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }

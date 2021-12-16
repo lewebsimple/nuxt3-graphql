@@ -10,5 +10,5 @@
 
 <script setup lang="ts">
 import { useHelloQuery } from "~/generated/operations";
-const { fetching, error, data } = await useHelloQuery();
+const { fetching, error, data } = useHelloQuery();
 </script>
