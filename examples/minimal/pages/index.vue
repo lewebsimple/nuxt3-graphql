@@ -8,6 +8,5 @@
 </template>
 
 <script setup lang="ts">
-import { useHelloQuery } from "~/generated/operations";
 const { error, data } = await useHelloQuery();
 </script>

@@ -1,5 +1,4 @@
-import { IntrospectionQuery } from 'graphql';
-export default {
+{
   "__schema": {
     "queryType": {
       "name": "Query"
@@ -32,4 +31,4 @@ export default {
     ],
     "directives": []
   }
-} as unknown as IntrospectionQuery;
+}

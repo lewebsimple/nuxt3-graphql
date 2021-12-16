@@ -2,7 +2,15 @@
 import { defineNuxtPlugin, NuxtApp } from "#app";
 // @ts-expect-error #build resolved by Nuxt3
 import nuxtUrqlOptions from "#build/urql.options.mjs";
-import { createClient, ssrExchange, dedupExchange, cacheExchange, fetchExchange } from "@urql/vue";
+import {
+  createClient,
+  ssrExchange,
+  dedupExchange,
+  cacheExchange as defaultCacheEchange,
+  fetchExchange,
+} from "@urql/vue";
+import { devtoolsExchange } from "@urql/devtools";
+import { cacheExchange as normalizedCacheExchange } from "@urql/exchange-graphcache";
 import { ref } from "vue";
 
 export default defineNuxtPlugin((nuxt: NuxtApp) => {
@@ -25,11 +33,16 @@ export default defineNuxtPlugin((nuxt: NuxtApp) => {
     });
   }
 
+  // Determine caching strategy
+  const cacheExchange = defaultCacheEchange;
+  // TODO: Load generated/urql-introspection.json somehow
+  // cacheExchange = normalizedCacheExchange();
+
   // Instantiate urql client
   const client = ref(
     createClient({
       url: nuxtUrqlOptions.url,
-      exchanges: [dedupExchange, ssr, cacheExchange, fetchExchange],
+      exchanges: [devtoolsExchange, dedupExchange, ssr, cacheExchange, fetchExchange],
     }),
   );
 

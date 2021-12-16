@@ -4,13 +4,3 @@ generates:
   generated/schema.d.ts:
     plugins:
       - typescript
-  generated/operations.ts:
-    config:
-      documentMode: documentNode
-    plugins:
-      - typescript
-      - typescript-operations
-      - typescript-vue-urql
-  generated/introspection.ts:
-    plugins:
-      - urql-introspection

@@ -50,6 +50,8 @@
   },
   "devDependencies": {
     "@nuxt/kit": "latest",
+    "@urql/devtools": "^2.0.3",
+    "@urql/exchange-graphcache": "^4.3.6",
     "@urql/vue": "^0.6.1",
     "graphql": "^15",
     "pathe": "^0.2.0",

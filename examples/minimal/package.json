@@ -19,6 +19,7 @@
     "@graphql-codegen/urql-introspection": "^2.1.0",
     "@nuxt3-graphql/codegen": "link:../../packages/codegen",
     "@nuxt3-graphql/urql": "link:../../packages/urql",
+    "@urql/exchange-graphcache": "^4.3.6",
     "@urql/vue": "^0.6.1",
     "graphql": "^15",
     "nexus": "^1.1.0",
