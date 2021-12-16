@@ -21,11 +21,13 @@
   "exports": {
     ".": {
       "require": "./dist/index.cjs",
-      "import": "./dist/index.mjs"
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
     },
     "./plugin": {
       "require": "./dist/plugin.cjs",
-      "import": "./dist/plugin.mjs"
+      "import": "./dist/plugin.mjs",
+      "types": "./dist/plugin.d.ts"
     }
   },
   "main": "./dist/index.cjs",
