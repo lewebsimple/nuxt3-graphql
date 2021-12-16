@@ -1,7 +1,15 @@
-import { BuildConfig } from "unbuild";
+import { defineBuildConfig } from "unbuild";
 
-export default {
+export default defineBuildConfig({
   declaration: true,
-  entries: ["./src/index"],
-  externals: ["@graphql-codegen/cli", "@nuxt/kit", "consola"],
-} as BuildConfig;
+  emitCJS: false,
+  entries: [{ input: "./src/index" }],
+  externals: [
+    "@graphql-codegen/cli",
+    "@graphql-codegen/plugin-helpers",
+    "@nuxt/kit",
+    "@nuxt/schema",
+    "consola",
+    "graphql",
+  ],
+});

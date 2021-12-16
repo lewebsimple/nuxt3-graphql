@@ -2,7 +2,7 @@
 import { defineNuxtPlugin, NuxtApp } from "#app";
 // @ts-expect-error #build resolved by Nuxt3
 import nuxtUrqlOptions from "#build/urql.options.mjs";
-import { createClient, ssrExchange, dedupExchange, fetchExchange } from "@urql/vue";
+import { createClient, ssrExchange, dedupExchange, cacheExchange, fetchExchange } from "@urql/vue";
 import { ref } from "vue";
 
 export default defineNuxtPlugin((nuxt: NuxtApp) => {
@@ -29,7 +29,7 @@ export default defineNuxtPlugin((nuxt: NuxtApp) => {
   const client = ref(
     createClient({
       url: nuxtUrqlOptions.url,
-      exchanges: [dedupExchange, ssr, fetchExchange],
+      exchanges: [dedupExchange, ssr, cacheExchange, fetchExchange],
     }),
   );
 

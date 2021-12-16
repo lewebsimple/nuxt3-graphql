@@ -1,6 +1,5 @@
 <template>
-  <div v-if="fetching">Loading...</div>
-  <div v-else-if="error">Oh no... {{ error }}</div>
+  <div v-if="error">Oh no... {{ error }}</div>
   <div v-else>
     <h1 v-if="data">
       {{ data.hello }}
@@ -10,5 +9,5 @@
 
 <script setup lang="ts">
 import { useHelloQuery } from "~/generated/operations";
-const { fetching, error, data } = await useHelloQuery();
+const { error, data } = await useHelloQuery();
 </script>
