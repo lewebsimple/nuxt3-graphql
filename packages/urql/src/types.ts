@@ -5,14 +5,11 @@ export type NuxtUrqlOptions = {
   url: string;
 };
 
-declare module "@nuxt/types" {
-  export interface NuxtConfig {
+declare module "@nuxt/schema" {
+  interface NuxtConfig {
     urql?: NuxtUrqlOptions;
   }
-}
-
-declare module "@nuxt/kit" {
-  export interface NuxtConfig {
+  interface NuxtOptions {
     urql?: NuxtUrqlOptions;
   }
 }
