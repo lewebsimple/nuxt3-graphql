@@ -3,6 +3,8 @@ import { dirname, resolve } from "pathe";
 import { fileURLToPath } from "url";
 import type { NuxtUrqlOptions } from "./types";
 
+export * from "./types";
+
 export default defineNuxtModule<NuxtUrqlOptions>((nuxt) => ({
   name: "urql",
   configKey: "urql",

@@ -3,6 +3,8 @@ import logger from "./logger";
 import { generate, loadContext } from "@graphql-codegen/cli";
 import type { NuxtCodegenConfig } from "./types";
 
+export * from "./types";
+
 export default defineNuxtModule<NuxtCodegenConfig>((nuxt) => ({
   name: "@nuxt3-graphql/codegen",
   configKey: "codegen",
