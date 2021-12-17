@@ -1,5 +1,5 @@
-import { DocumentNode } from 'graphql';
-import * as Urql from '@urql/vue';
+import { DocumentNode } from "graphql";
+import * as Urql from "@urql/vue";
 export type Maybe<T> = T | null;
 export type InputMaybe<T> = Maybe<T>;
 export type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] };
@@ -16,18 +16,26 @@ export type Scalars = {
 };
 
 export type Query = {
-  __typename?: 'Query';
-  hello: Scalars['String'];
+  __typename?: "Query";
+  hello: Scalars["String"];
 };
 
-export type HelloQueryVariables = Exact<{ [key: string]: never; }>;
+export type HelloQueryVariables = Exact<{ [key: string]: never }>;
 
+export type HelloQuery = { __typename?: "Query"; hello: string };
 
-export type HelloQuery = { __typename?: 'Query', hello: string };
+export const HelloDocument = {
+  kind: "Document",
+  definitions: [
+    {
+      kind: "OperationDefinition",
+      operation: "query",
+      name: { kind: "Name", value: "Hello" },
+      selectionSet: { kind: "SelectionSet", selections: [{ kind: "Field", name: { kind: "Name", value: "hello" } }] },
+    },
+  ],
+} as unknown as DocumentNode;
 
-
-export const HelloDocument = {"kind":"Document","definitions":[{"kind":"OperationDefinition","operation":"query","name":{"kind":"Name","value":"Hello"},"selectionSet":{"kind":"SelectionSet","selections":[{"kind":"Field","name":{"kind":"Name","value":"hello"}}]}}]} as unknown as DocumentNode;
-
-export function useHelloQuery(options: Omit<Urql.UseQueryArgs<never, HelloQueryVariables>, 'query'> = {}) {
+export function useHelloQuery(options: Omit<Urql.UseQueryArgs<never, HelloQueryVariables>, "query"> = {}) {
   return Urql.useQuery<HelloQuery>({ query: HelloDocument, ...options });
-};
+}
