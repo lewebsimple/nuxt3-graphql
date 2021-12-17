@@ -1,4 +1,4 @@
-schema: generated/schema.graphql
+schema: server/schema-loader.js
 documents: graphql/**/*.graphql
 generates:
   generated/schema.d.ts:
