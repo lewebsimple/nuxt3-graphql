@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+  },
+  "include": [
+    "server/**/*.ts"
+  ]
+}

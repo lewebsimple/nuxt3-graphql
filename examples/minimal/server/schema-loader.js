@@ -1,6 +1,6 @@
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 require("ts-node").register({
-  skipProject: true,
+  project: "tsconfig.schema.json",
   transpileOnly: true,
 });
 module.exports = require("./schema");
