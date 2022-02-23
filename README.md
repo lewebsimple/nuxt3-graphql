@@ -2,6 +2,12 @@
 
 This package provides some useful modules for building fullstack GraphQL applications with Nuxt3.
 
+## ⚠️ Deprecation warning 
+
+This project is **deprecated** in favour of [**nuxt-module-codegen**](https://github.com/lewebsimple/nuxt-graphql-codegen/) which based on the latest Nuxt module starter template.
+
+As for `@nuxt3-graphql/urql`, it is being abandoned for now.
+
 ## Modules
 
 - [@nuxt3-graphql/codegen](packages/codegen) : GraphQL code generation based on [@graphql-codegen/cli](https://www.graphql-code-generator.com/)
